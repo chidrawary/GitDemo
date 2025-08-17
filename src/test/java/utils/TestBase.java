@@ -39,7 +39,7 @@ public class TestBase
 			
 				driver = new FirefoxDriver();
 			}
-			
+				
 			if(browser.equalsIgnoreCase("Edge"))
 			{
 				driver = new EgdeDriver();
@@ -50,6 +50,10 @@ public class TestBase
 				driver = new SafariDriver();
 			}
 			
+			if(browser.equals("Google"))
+			{
+				driver = new GoogleDriver();
+			}
 			driver.get(url);
 			driver.manage().window().maximize();
 			
