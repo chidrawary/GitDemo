@@ -40,32 +40,7 @@ public class TestBase
 				driver = new FirefoxDriver();
 			}
 				
-			if(browser.equalsIgnoreCase("Edge"))
-			{
-				driver = new EgdeDriver();
-			}
-			
-			if(browser.equalsIgnoreCase("Safari"))
-			{
-				driver = new SafariDriver();
-			}
-			
-			if(browser.equals("Google"))
-			{
-				driver = new GoogleDriver();
-			}
-			
-			if(browser.equalsIgnoreCase("MicrosoftEdge_1"))
-			{
-				driver = new MicroDriver();
-			}
-			
-			driver.get(url);
-			driver.manage().window().maximize();
-			
-			Thread.sleep(2000);			
-			
-			Thread.sleep(5000);
+		
 		}		
 		return driver;		
 	}
