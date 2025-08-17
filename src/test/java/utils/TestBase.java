@@ -40,6 +40,11 @@ public class TestBase
 				driver = new FirefoxDriver();
 			}
 			
+			if(browser.equalsIgnoreCase("Edge"))
+			{
+				driver = new EgdeDriver();
+			}
+			
 			driver.get(url);
 			driver.manage().window().maximize();
 			
