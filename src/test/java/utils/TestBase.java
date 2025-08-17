@@ -45,6 +45,11 @@ public class TestBase
 				driver = new EgdeDriver();
 			}
 			
+			if(browser.equalsIgnoreCase("Safari"))
+			{
+				driver = new SafariDriver();
+			}
+			
 			driver.get(url);
 			driver.manage().window().maximize();
 			
