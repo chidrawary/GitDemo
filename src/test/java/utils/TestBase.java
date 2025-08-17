@@ -54,6 +54,12 @@ public class TestBase
 			{
 				driver = new GoogleDriver();
 			}
+			
+			if(browser.equalsIgnoreCase("Micro"))
+			{
+				driver = new MicroDriver();
+			}
+			
 			driver.get(url);
 			driver.manage().window().maximize();
 			
