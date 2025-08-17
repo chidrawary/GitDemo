@@ -55,7 +55,7 @@ public class TestBase
 				driver = new GoogleDriver();
 			}
 			
-			if(browser.equalsIgnoreCase("Micro"))
+			if(browser.equalsIgnoreCase("MicrosoftEdge_1"))
 			{
 				driver = new MicroDriver();
 			}
@@ -63,7 +63,9 @@ public class TestBase
 			driver.get(url);
 			driver.manage().window().maximize();
 			
-			Thread.sleep(2000);						
+			Thread.sleep(2000);			
+			
+			Thread.sleep(5000);
 		}		
 		return driver;		
 	}
